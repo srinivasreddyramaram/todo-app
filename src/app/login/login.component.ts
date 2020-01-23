@@ -8,10 +8,10 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent implements OnInit {
 
-  username :string  = 'cnu'
-  password :string = 'pass123';
-  invalidLogin :boolean = false
-  invalidCredentials = 'Wrong username/password'
+  username = 'cnu';
+  password = 'pass123';
+  invalidLogin = false;
+  invalidCredentials = 'Wrong username/password';
 
   // Dependency Injection
   constructor(private router: Router) { }
@@ -19,16 +19,15 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
   }
 
-  handleLogin(){
+  handleLogin() {
     // console.log(this.username)
     // console.log(this.password)
 
-    if(this.username === 'cnu' && this.password === 'pass123'){
-      this.invalidLogin  = false
-      this.router.navigate(['welcome', this.username])
-    }
-    else {
-      this.invalidLogin = true
+    if (this.username === 'cnu' && this.password === 'pass123') {
+      this.invalidLogin = false;
+      this.router.navigate(['welcome', this.username]);
+    } else {
+      this.invalidLogin = true;
     }
   }
 }

@@ -6,7 +6,7 @@ export class Todo {
     public desc: string,
     public targetDate: Date,
     public isCompleted: boolean
-  ){
+  ) {
 
   }
 }
@@ -28,7 +28,7 @@ export class ListTodosComponent implements OnInit {
     new Todo(1, 'Learn Angular', new Date(), false),
     new Todo(2, 'Learn Java', new Date(), false),
     new Todo(3, 'Get fit', new Date(), false)
-  ]
+  ];
   constructor() { }
 
   ngOnInit() {

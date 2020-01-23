@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ErrorComponent implements OnInit {
 
-  invalidUrls = 'URL does not exist! '
+  invalidUrls = 'URL does not exist! ';
   constructor() { }
 
   ngOnInit() {
